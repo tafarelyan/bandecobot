@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 from datetime import date
 
 from telegram import ReplyKeyboardMarkup
@@ -18,7 +19,7 @@ reply_keyboard = [['Fisica', 'Quimica'],
                   ['Done']]
 markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
 
-driver = webdriver.PhantomJS()
+driver = webdriver.PhantomJS(executable_path=os.path.abspath('phantomjs'))
 driver.set_window_size(1120, 550)
 
 u = Updater('YOUR-TOKEN')
