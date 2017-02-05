@@ -50,8 +50,7 @@ def menu(bot, update):
     try:
         weekdays = ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta']
 
-        # day = weekdays[date.today().weekday()]
-        day = weekdays[0]
+        day = weekdays[date.today().weekday()]
         menu = get_menu(update.message.text, day)
         update.message.reply_text(menu)
 
