@@ -21,7 +21,7 @@ markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
 driver = webdriver.PhantomJS()
 driver.set_window_size(1120, 550)
 
-u = Updater('321229309:AAF4uX6Zbmr1-0x6VbTScrjN6EA_xSvfPpg')
+u = Updater('YOUR-TOKEN')
 dp = u.dispatcher
 
 
