@@ -19,7 +19,8 @@ reply_keyboard = [['Fisica', 'Quimica'],
                   ['Done']]
 markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
 
-driver = webdriver.PhantomJS(executable_path=os.path.abspath('phantomjs'))
+driver = webdriver.PhantomJS(executable_path=os.path.abspath('phantomjs'),
+                             service_log_path=os.path.devnull)
 driver.set_window_size(1120, 550)
 
 u = Updater('YOUR-TOKEN')
